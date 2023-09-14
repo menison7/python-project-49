@@ -2,15 +2,19 @@
 install:
 	poetry install
 
- brain-games:
+brain-games:
 	poetry run brain-games
 
- build:
+build:
 	poetry build
 
- publish:
+publish:
 	poetry publish --dry-run
 
- package-install:
+package-install:
 	python3 -m pip install --user dist/*.whl
+
+make lint:
+	poetry run flake8 brain_games
+
 	
