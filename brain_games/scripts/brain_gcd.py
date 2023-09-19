@@ -20,6 +20,8 @@ def main():
         if nod == int(user_answer):
             return 1
         else:
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{nod}'.")
+            print(f"Let's try again, {name}!")
             return 0
 
 
