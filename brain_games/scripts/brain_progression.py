@@ -12,7 +12,7 @@ def progression(name):
     shag = random.randint(1, 6)
     list_prog = [random.randint(0, 10),]
     for i in range(10):
-        list_prog.append(list_prog[i]+shag)
+        list_prog.append(list_prog[i] + shag)
     found_element = list_prog[random.randint(0, 10)]
     list_prog[list_prog.index(found_element)] = '..'
     print("Question:", *list_prog)
