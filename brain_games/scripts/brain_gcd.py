@@ -11,7 +11,7 @@ def welcome_user():
 def gcd():
     name = welcome_user()
     print(f"Hello, {name}")
-    n = 0
+    ch = 0
     print("Find the greatest common divisor of given numbers.")
     for i in range(3):
         a = random.randint(1, 100)
@@ -30,8 +30,8 @@ def gcd():
             print(f"Correct answer was '{nd}'.")
             print(f"Let's try again, {name}!")
             break
-        n += 1
-        if n == 3:
+        ch += 1
+        if ch == 3:
             print(f"Congratulations, {name}!")
 
 

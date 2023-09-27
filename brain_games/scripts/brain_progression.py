@@ -11,7 +11,7 @@ def welcome_user():
 def progression():
     name = welcome_user()
     print(f"Hello, {name}")
-    n = 0
+    ch = 0
     print("What number is missing in the progression?")
     for i in range(3):
         shag = random.randint(1, 6)
@@ -29,8 +29,8 @@ def progression():
             print(f"Correct answer was '{found_element}'.")
             print(f"Let's try again, {name}!")
             break
-        n += 1
-        if n == 3:
+        ch += 1
+        if ch == 3:
             print(f"Congratulations, {name}!")
 
 

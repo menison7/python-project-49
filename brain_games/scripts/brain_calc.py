@@ -11,7 +11,7 @@ def welcome_user():
 def calc():
     name = welcome_user()
     print(f"Hello, {name}")
-    n = 0
+    ch = 0
     print("What is the result of the expression?")
     for i in range(3):
         a = random.randint(1, 100)
@@ -53,8 +53,8 @@ def calc():
                 print(f''' Correct answer was '{r}'.''')
                 print(f"Let's try again, {name}!")
                 break
-        n += 1
-        if n == 3:
+        ch += 1
+        if ch == 3:
             print(f"Congratulations, {name}!")
 
 

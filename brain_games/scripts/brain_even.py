@@ -11,7 +11,7 @@ def welcome_user():
 def even():
     name = welcome_user()
     print(f"Hello, {name}")
-    n = 0
+    ch = 0
     print('''Answer "yes" if the number is even, otherwise answer "no".''')
     for i in range(3):
         list_answer = ['yes', 'no']
@@ -27,8 +27,8 @@ def even():
             print(f'''Correct answer was '{list_answer[0]}'.''')
             print(f"Let's try again, {name}!")
             break
-        n += 1
-        if n == 3:
+        ch += 1
+        if ch == 3:
             print(f"Congratulations, {name}!")
 
 
